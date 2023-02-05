@@ -31,7 +31,7 @@
                                 <div class="messsage-box form-group mt-3 mb-0">
                                     <textarea id="messageBox" class="form-control" rows="5" placeholder="Type your message here..."></textarea>
                                 </div>
-                                <button id="sendMessageButton"> Enviar </button>
+                                <button onclick="postMessage" type="submit" id="sendMessageButton"> Enviar </button>
                             </div>
                         </div>
                     </div>
@@ -40,14 +40,19 @@
         </div>
     </div>
 
-</div>
+
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
 
 <script>
 const socket = io("http://localhost:8080")
-document.getElementById("sendMessageButton").addEventListener("click", postMessage)
+document.getElementById("sendMessageButton").addEventListener("click", (e) => {
+   e.preventDefault();
+   postMessage();
+   });
+
+
 let user = ""; 
 
 Swal.fire({
@@ -81,7 +86,7 @@ socket.on("historialChat", data => {
   historial.innerHTML = `      <li class="chat-left">
                                         <div class="chat-avatar">
                                             <img src="https://icon-library.com/images/unknown-person-icon/unknown-person-icon-4.jpg" alt="">
-                                            <div class="chat-name">German</div>
+                                            <div class="chat-name">PabloGonzalez315</div>
                                         </div>
                                         <div class="chat-text">
                                         Hola, podes probar esta aplicacion de chat con WebSocket.

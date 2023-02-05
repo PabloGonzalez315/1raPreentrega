@@ -1,6 +1,6 @@
 import express from "express";
 import productRoutes from "./src/routes/products.routes.js";
-import viewsRoutes from "./src/routes/views.router.js";
+import viewsRoutes from "./src/routes/views.routes.js";
 import chatRoutes from "./src/routes/chat.routes.js";
 import handlebars from "express-handlebars";
 import cartRoutes from "./src/routes/carts.routes.js";
@@ -40,7 +40,7 @@ app.use("/api/carts", cartRoutes);
 // APLICACION DE BASE DE DATOS CON MONGOOSE ✅
 mongoose.set("strictQuery", false);
 mongoose.connect(
-    "mongodb+srv://PabloGonzalez:coderBackend2023@codercluster.dzpfie2.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://PabloGonzalez315:alejandro123@pablogonzalez.ochvu61.mongodb.net/ecommerce?retryWrites=true&w=majority",
     (error) => {
         if (error) {
             console.log("Cannot connect to database" + error);
@@ -62,3 +62,5 @@ io.on("connection", async (socket) => {
         io.emit("historialChat", await chatDao.getMessages());
     });
 });
+
+
