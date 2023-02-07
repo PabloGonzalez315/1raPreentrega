@@ -5,10 +5,17 @@ const cartCollection = "carts";
 const cartSchema = new mongoose.Schema({
     products: [
         {
-            productId: String,
+            product: {
+                type: String,
+                ref: "products",
+            },
             quantity: Number,
         },
     ],
+});
+
+cartSchema.pre("find", function () {
+    this.populate("products.product");
 });
 
 export const cartModel = mongoose.model(cartCollection, cartSchema);

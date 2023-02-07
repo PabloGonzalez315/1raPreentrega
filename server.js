@@ -9,6 +9,8 @@ import __dirname from "./dirname.js";
 import chatDao from "./src/dao/chatDao.js";
 import path from "path";
 import { Server } from "socket.io";
+import Handlebars from "handlebars";
+import { allowInsecurePrototypeAccess } from "@handlebars/allow-prototype-access";
 
 const app = express();
 
@@ -25,8 +27,12 @@ app.engine(
     handlebars.engine({
         extname: "hbs",
         defaultLayout: "main",
+        extname: "hbs",
+        defaultLayout: "main",
+        handlebars: allowInsecurePrototypeAccess(Handlebars),
     })
 );
+
 app.set("views", __dirname + "/src/views");
 app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "/src/public")));
@@ -62,5 +68,3 @@ io.on("connection", async (socket) => {
         io.emit("historialChat", await chatDao.getMessages());
     });
 });
-
-
