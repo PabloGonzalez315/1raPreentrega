@@ -18,7 +18,7 @@ router.get("/products", async (req, res) => {
     }
 });
 
-router.get("/carts/:cid", async (req, res) => {
+router.get("/cart/:cid", async (req, res) => {
     const cid = req.params.cid;
     try {
         let result = await cartDao.getCartById(cid);

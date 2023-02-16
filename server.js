@@ -3,7 +3,7 @@ import productRoutes from "./src/routes/products.routes.js";
 import viewsRoutes from "./src/routes/views.routes.js";
 import chatRoutes from "./src/routes/chat.routes.js";
 import handlebars from "express-handlebars";
-import cartRoutes from "./src/routes/carts.routes.js";
+import cartRoutes from "./src/routes/cart.routes.js";
 import mongoose from "mongoose";
 import __dirname from "./dirname.js";
 import chatDao from "./src/dao/chatDao.js";
@@ -41,12 +41,13 @@ app.use(express.static(path.join(__dirname, "/src/public")));
 app.use("/", viewsRoutes);
 app.use("/chat", chatRoutes);
 app.use("/api/products", productRoutes);
-app.use("/api/carts", cartRoutes);
+app.use("/api/cart", cartRoutes);
 
 // APLICACION DE BASE DE DATOS CON MONGOOSE ✅
 mongoose.set("strictQuery", false);
 mongoose.connect(
-    "mongodb+srv://PabloGonzalez315:alejandro123@pablogonzalez.ochvu61.mongodb.net/ecommerce?retryWrites=true&w=majority",
+    "mongodb+srv://PabloGonzalez315:alejandro123@pablogonzalez.ochvu61.mongodb.net/?retryWrites=true&w=majority",
+	console.log("conectado correctamente a Mongo"),
     (error) => {
         if (error) {
             console.log("Cannot connect to database" + error);

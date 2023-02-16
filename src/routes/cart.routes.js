@@ -8,7 +8,7 @@ const router = Router();
 
 router.get("/", async (req, res) => {
     try {
-        res.json(await cartDao.getCarts());
+        res.json(await cartDao.getcart());
     } catch (error) {
         res.json({ error });
     }

@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Zapatilla Deportiva Nike",
+        "description": "Zapatillas Deportivas de marca: ",
+        "categoria": "Zapatillas",
+        "price": "30000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A1",
+        "status": true,
+        "stock": 25
+    },
+    {
+        "title": "Zapatilla Deportiva Adidas",
+        "description": "Zapatillas Deportivas de marca: ",
+        "categoria": "Zapatillas",
+        "price": "20000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A2",
+        "status": true,
+        "stock": 5
+    },
+    {
+        "title": "Zapatilla Deportiva Puma ",
+        "description": "Zapatillas Deportivas de marca: ",
+        "categoria": "Zapatillas",
+        "price": "23000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A3",
+        "status": true,
+        "stock": 10
+    },
+    {
+        "title": "Zapatilla Deportiva Nike",
+        "description": "Zapatillas Deportivas de marca: ",
+        "categoria": "Zapatillas",
+        "price": "29000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A4",
+        "status": true,
+        "stock": 25
+    },
+    {
+        "title": "Zapatilla Deportiva Reebok",
+        "description": "Zapatillas Deportivas de marca: ",
+        "category": "Zapatillas",
+        "price": "17000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A5",
+        "status": true,
+        "stock": 50
+    },
+    {
+        "title": "Zapatilla Deportiva Pocholin",
+        "description": "Zapatillas Deportivas de marca: ",
+        "category": "Zapatillas",
+        "price": "12000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A6",
+        "status": true,
+        "stock": 22
+    },
+    {
+        "title": "Zapatilla Deportiva converse",
+        "description": "Zapatillas Deportivas de marca: ",
+        "category": "Zapatillas",
+        "price": "16000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A7",
+        "status": true,
+        "stock": 20
+    },
+    {
+        "title": "Zapatilla Deportiva DC",
+        "description": "Verdura",
+        "category": "Zapatillas",
+        "price": "23000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "B1",
+        "status": true,
+        "stock": 50
+    },
+    {
+        "title": "Zapatilla Deportiva Adidas",
+        "description": "Verdura",
+        "category": "Zapatillas",
+        "price": "10000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "B2",
+        "status": true,
+        "stock": 25
+    },
+    {
+        "title": "Zapatilla Deportiva Puma",
+        "description": "Zapatillas Deportivas de marca: ",
+        "category": "Zapatillas",
+        "price": "17600",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "B3",
+        "status": true,
+        "stock": 49
+    },
+    {
+        "title": "Zapatilla Deportiva Roxy",
+        "description": "Zapatillas Deportivas de marca: ",
+        "category": "Zapatillas",
+        "price": "10200",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A20",
+        "status": true,
+        "stock": 10
+    },
+    {
+        "title": "Zapatilla Deportiva Skechers",
+        "description": "Zapatillas Deportivas de marca: ",
+        "category": "Zapatillas",
+        "price": "20000",
+        "thumbnail": "http://ximg.es/300x400/000/fff",
+        "code": "A21",
+        "status": true,
+        "stock": 10
+    }
+]
