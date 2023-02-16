@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 const httpServer = app.listen(8080, () => console.log("Listening on port 8080"));
 const io = new Server(httpServer);
 
-// CONFIGURACION DE HANDLEBARS ✅
+// CONFIGURACION DE HANDLEBARS 
 app.engine(
     "hbs",
     handlebars.engine({
@@ -37,13 +37,13 @@ app.set("views", __dirname + "/src/views");
 app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "/src/public")));
 
-// ROUTES ✅
+// ROUTES 
 app.use("/", viewsRoutes);
 app.use("/chat", chatRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 
-// APLICACION DE BASE DE DATOS CON MONGOOSE ✅
+// APLICACION DE BASE DE DATOS CON MONGOOSE 
 mongoose.set("strictQuery", false);
 mongoose.connect(
     "mongodb+srv://PabloGonzalez315:alejandro123@pablogonzalez.ochvu61.mongodb.net/?retryWrites=true&w=majority",
@@ -56,7 +56,7 @@ mongoose.connect(
     }
 );
 
-// SOCKET IO ✅
+// SOCKET IO 
 io.on("connection", async (socket) => {
     socket.emit("historialChat", await chatDao.getMessages());
 
